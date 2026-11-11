@@ -1,0 +1,51 @@
+{
+  "_comment": "Modellkatalog. Lägg egna modeller i ~/Library/Application Support/Transkribering/models.json med samma format (poster med samma id ersätter dessa). 'engine' väljer motor i backend/engines.",
+  "default": "pianissimo-sv-mlx-8bit",
+  "models": [
+    {
+      "id": "pianissimo-sv-mlx-8bit",
+      "name": "Klang Pianissimo svenska – 8-bit (rekommenderad)",
+      "engine": "pianissimo-mlx",
+      "repo": "KlangAI/pianissimo-sv-mlx-8bit",
+      "revision": "7b4d528bfb7ce3c66e2a187904f8d86ac39bc6de",
+      "language": "sv",
+      "size": "759 MB",
+      "notes": "Samma träffsäkerhet som originalet (WER 4,5 % på Common Voice) till en tredjedel av storleken."
+    },
+    {
+      "id": "pianissimo-sv-mlx-4bit",
+      "name": "Klang Pianissimo svenska – 4-bit (minst)",
+      "engine": "pianissimo-mlx",
+      "repo": "KlangAI/pianissimo-sv-mlx-4bit",
+      "revision": "c91030eb926e7e27aed41ab07e09a4989c441db4",
+      "language": "sv",
+      "size": "528 MB",
+      "notes": "Något lägre träffsäkerhet, minst nedladdning."
+    },
+    {
+      "id": "pianissimo-sv-mlx-bf16",
+      "name": "Klang Pianissimo svenska – bf16",
+      "engine": "pianissimo-mlx",
+      "repo": "KlangAI/pianissimo-sv-mlx",
+      "language": "sv",
+      "size": "1,25 GB"
+    },
+    {
+      "id": "pianissimo-da-mlx-8bit",
+      "name": "Klang Pianissimo danska – 8-bit",
+      "engine": "pianissimo-mlx",
+      "repo": "KlangAI/pianissimo-da-mlx-8bit",
+      "language": "da",
+      "size": "~760 MB"
+    },
+    {
+      "id": "whisper-large-v3-turbo-mlx",
+      "name": "Whisper large-v3-turbo (kräver mlx-whisper)",
+      "engine": "mlx-whisper",
+      "repo": "mlx-community/whisper-large-v3-turbo",
+      "language": "sv",
+      "size": "1,6 GB",
+      "notes": "Exempel på alternativ motor. Avkommentera mlx-whisper i backend/requirements.txt och installera om backend."
+    }
+  ]
+}

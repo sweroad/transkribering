@@ -1,0 +1,11 @@
+# Gemensamt för backend-processen
+numpy>=2.0
+huggingface_hub>=0.30
+sentencepiece
+
+# Motor: pianissimo-mlx (KlangAI/pianissimo-sv-mlx-*)
+mlx>=0.32
+parakeet-mlx==0.5.2
+
+# Valfri motor: mlx-whisper (avkommentera för att kunna använda Whisper-modeller)
+# mlx-whisper
